@@ -4,29 +4,8 @@
 	See: http://www.gebish.org/manual/current/configuration.html
 */
 
-import org.openqa.selenium.Dimension
+import org.openqa.selenium.firefox.FirefoxDriver
 
-
-baseUrl = "http://localhost:8080/grails-people-example"
-reportsDir = "target/reportsDir"
-
-def instantiateDriver(String className) {
-    def driverInstance = Class.forName(className).newInstance()
-    driverInstance.manage().window().size = new Dimension(1280, 1024)
-    driverInstance
-}
-
-environments {
-    chrome {
-        driver = { instantiateDriver 'org.openqa.selenium.chrome.ChromeDriver' }
-    }
-
-    firefox {
-        driver = { instantiateDriver 'org.openqa.selenium.firefox.FirefoxDriver' }
-    }
-
-    htmlunit {
-        // See: http://code.google.com/p/selenium/wiki/HtmlUnitDriver
-        driver = { Class.forName('org.openqa.selenium.htmlunit.HtmlUnitDriver').newInstance() }
-    }
-}
+driver = { new FirefoxDriver() }
+reportsDir = 'target/geb-reports'
+baseUrl = 'http://localhost:8080/geb-example-grails/'
