@@ -6,6 +6,10 @@
 
 import org.openqa.selenium.Dimension
 
+
+baseUrl = "http://localhost:8080/grails-people-example"
+reportsDir = "target/reportsDir"
+
 def instantiateDriver(String className) {
     def driverInstance = Class.forName(className).newInstance()
     driverInstance.manage().window().size = new Dimension(1280, 1024)
