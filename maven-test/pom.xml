@@ -172,6 +172,7 @@
         <configuration>
           <includes>
             <include>*Spec.*</include>
+            <include>*Tests.*</include>
           </includes>
           <systemPropertyVariables>
             <geb.build.baseUrl>http://google.com/ncr</geb.build.baseUrl>

@@ -4,7 +4,7 @@ import spock.lang.*
 
 import pages.*
 
-@Ignore
+
 @Stepwise
 class PersonCRUDSpec extends GebReportingSpec {
 	

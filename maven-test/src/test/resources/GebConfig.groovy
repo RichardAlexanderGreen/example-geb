@@ -8,4 +8,4 @@ import org.openqa.selenium.firefox.FirefoxDriver
 
 driver = { new FirefoxDriver() }
 reportsDir = 'target/geb-reports'
-baseUrl = 'http://localhost:8080/geb-example-grails/'
+baseUrl = 'http://localhost:8080/grails-people-example/'
