@@ -1,6 +1,7 @@
 package modules
 
-import geb.Module;
+import geb.Module
+import pages.ShowPage
 
 class PersonRow extends Module {
 	static content = {
