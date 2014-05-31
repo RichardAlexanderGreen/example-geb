@@ -14,6 +14,6 @@ class ListPage extends ScaffoldPage {
 		peopleTable { $("div.content table", 0) }
 		personRow { module PersonRow, personRows[it] }
 		personRows(required: false) { peopleTable.find("tbody").find("tr") }
-		personListEmpty { personRows.size() == 0 }
+		personListIsEmpty { personRows.size() == 0 }
 	}
 }
